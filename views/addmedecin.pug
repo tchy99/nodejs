@@ -1,0 +1,38 @@
+extends try 
+
+block content 
+    fieldset 
+        legend #{title}
+        form.mb-3(action="/api/medecin/add", method="post") 
+            .col-mb-3
+              label Nom
+              input.form-control(type='text',name="nom")
+            .col-mb-3
+              label Prénom
+              input.form-control(type='text',name="prenom")
+            .col-md-3
+                label Sexe
+                select.form-select(aria-label="Default select example" name="sexe")
+                    option(value="Masculin") Masculin
+                    option(value="Féminin") Féminin
+            .col-mb-3
+                label Adresse
+                input.form-control(type='text',name="adresse")
+            .col-mb-3
+                label Téléphone
+                input.form-control(type='text',name="telephone")
+            .col-mb-3
+                label Email
+                input.form-control(type='email',name="email")
+            .col-md-3
+                label Spécialisation
+                select.form-select(aria-label="Default select example" name="specialisation")
+                    option(value="Dentisterie") Dentisterie
+                    option(value="Ophtalmologue") Ophtalmologue
+                    option(value="Gynécologue") Gynécoologue
+                    option(value="Urologue") Urologue
+                    option(value="Dermathologue") Dermathologue
+                    option(value="Pédiatrie") Pédiatrie
+            button.btn.btn-primary(type="submit",value ="Enregistrer") Enregistrer
+        
+

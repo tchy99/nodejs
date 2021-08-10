@@ -1,0 +1,15 @@
+extends try 
+block content 
+    fieldset 
+        //- legend #{nom}
+        a(href="/api/prescription/add") AJOUTER UNE PRESCRIPTION
+        table.table
+            thead.table-dark
+                tr 
+                    th idpres
+                    th ordonnance 
+            tbody.table-info
+                each d in data 
+                    tr 
+                        td= d.idpres
+                        td= d.ordonnance

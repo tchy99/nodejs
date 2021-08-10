@@ -1,0 +1,31 @@
+extends try 
+
+block content 
+    fieldset 
+        legend #{na}
+        table.table
+            tr  
+                th Nom 
+                td= data[0].nom
+            tr  
+                th Prénom 
+                td= data[0].prenom
+            tr  
+                th Sexe
+                td= data[0].sexe
+            tr  
+                th Date de naissance
+                td= data[0].datenaissance
+            tr  
+                th Telephone
+                td= data[0].telephone
+            tr  
+                th Adresse
+                td= data[0].adresse
+            tr  
+                th Age 
+                td= data[0].age
+            tr  
+                th Nom Jeune Fille de la mère 
+                td= data[0].nomjeunefillemere
+        a.btn.btn-secondary(href="/api/patient/edit/"+data[0].idpatient) Modifier

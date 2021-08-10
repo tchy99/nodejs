@@ -1,0 +1,14 @@
+extends try 
+
+block content 
+    fieldset 
+        legend #{nom}
+        form.mb-3(action="/api/no_dossier/create", method="post") 
+            .col-mb-3
+              label Symptome du patient
+              input.form-control(type='text',name="symptome")
+            .col-mb-3
+              label Date de Consultation
+              input.form-control(type='date',name="date_consultation")
+              br
+            button.btn.btn-primary(type="submit",value ="Enregistrer") Enregistrer

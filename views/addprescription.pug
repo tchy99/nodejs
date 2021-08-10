@@ -1,0 +1,13 @@
+extends try 
+block content 
+    fieldset 
+        legend #{ti}
+        form.mb-3(action="/api/prescription/add", method="post") 
+             .col-mb-3
+               label IdPrescription
+               input.form-control(type='text',name="idpres")
+            .col-mb-3
+              label Ordonnance
+              input.form-control(type='text',name="date")
+              br
+            button.btn.btn-primary(type="submit",value ="Enregistrer") Enregistrer

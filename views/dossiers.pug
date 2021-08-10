@@ -1,0 +1,18 @@
+extends try 
+
+block content 
+    fieldset 
+        legend #{nom}
+        a(href="/api/no_dossier/create") AJOUTER UN DOSSIER
+        table.table
+            thead.table-dark
+                tr 
+                    th no_dossier
+                    th id_patient  
+            tbody.table-info
+                each d in data 
+                    tr 
+                        td= d.dossier.no_dossier 
+                        td= d.patient.idpatient
+                        td= d.symptome
+                        td= d.date_consultation

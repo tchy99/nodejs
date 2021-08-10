@@ -1,0 +1,20 @@
+extends try 
+block content 
+    fieldset 
+        legend #{title}
+        a(href="/api/consultation/add") AJOUTER UNE CONSULTATION
+        table.table 
+            thead.table-dark
+                tr 
+                    th no dossier
+                    th idmedecin
+                    th Symptome 
+                    th Date de Consultation
+            tbody.table-info
+                each d in data 
+                    tr 
+                        td= d.no_dossier
+                        td= d.idmedecin
+                        td= d.symptome
+                        td= d.date
+                            //- a.btn.btn-info(href="/api/consultation/"+d.idconsultation) Details 

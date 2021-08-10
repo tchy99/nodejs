@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bienvenue dans ma clinique
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
+        script(src="/js/bootstrap.min.js")
+        //-    .container-fluid
+    //-    .card
+    //-     .card-header
+    //-       | LISTE DES PATIENTS
+    body
+      include nav
+      block content 
+      #header
+        a.logo(href='index.html')
+          img(src='medecin.jpg' alt='')
+        //- ul
+        //-   li.selected
+        //-     a(href='index.html') home
+        //-   li
+        //-     a(href='../views/about.pug') about
+        //-   li
+        //-     a(href='services.html') services
+        //-   li
+        //-     a(href='location.html') our locations
+        //-   li
+        //-     a(href='contact.html') contact
+        //-   li
+        //-     a(href='blog.html') blog
+      #section
+        div
+           div
+              h1 accurate.reliable.fast
+              p
+                | When it comes to finding answers to questions and getting results. Illumelabs is number one. No other diagnostic laboratory is faster, more reliable and accurate. Choose Illumelabs.
+      #featured
+        div
+          .article
+            h2 Welcome to Illumelabs Diagnostic Center
+            img(src='diagnostic-center.jpg' alt='')
+            p
+                | This website template hahs been designed by
+                a(href='http://www.freewebsitetemplates.com/') Free Website Templates
+                | for you, for free. You can replace all this text with your own text.
+            p
+                | You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
+            p
+                | f you're having problems editing this website template, then don't hesitate to ask for help on the
+            a(href='http://www.freewebsitetemplates.com/forums/') Forums
+                | .
+          ul
+            li
+              h3 hematology
+              div
+                p
+                    | Blood extraction using seismic energy for painless testing.
+                a.more(href='blog.html') read more
+              img(src='hematology.jpg' alt='')
+            li
+              h3 urine &amp; drug testing
+              div
+                p
+                    | Accurate and secure testing of urine for diseases and drugs and medicines.
+                a.more(href='blog.html') read more
+              img(src='urine-and-drug-testing.jpg' alt='')
+            li
+              h3 x-ray
+              div
+                p
+                 | Fast and clear x-ray results. You’ll be assisted by our friendly staff all the way.
+                a.more(href='blog.html') read more
+              img(src='x-ray.jpg' alt='')
+            li
+            h3 pathology and dna
+            div
+              p
+                | State of the art testing for DNA that’s sure to be have fast and accurate results.
+              a.more(href='blog.html') read more
+            img(src='pathology-and-dna.jpg' alt='')
+      #footer
+        div
+          p
+             span 2023 &copy; Illumelabs Diagnostic Center.
+             a(href='#') Terms of Service
+             | |
+             a(href='#') Privacy Policy
+          ul
+            li#facebook
+              a(href='http://freewebsitetemplates.com/go/facebook/') facebook
+            li#twitter
+              a(href='http://freewebsitetemplates.com/go/twitter/') twitter
+            li#googleplus
+              a(href='http://freewebsitetemplates.com/go/googleplus/') googleplus
+            li#rss
+              a(href='#') rss
+
+        

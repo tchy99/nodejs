@@ -1,0 +1,30 @@
+extends try 
+block content 
+    fieldset 
+        legend #{title}
+        a(href="/api/patient/add") AJOUTER UN NOUVEAU PATIENT
+        table.table 
+            thead.table-dark
+                tr 
+                    th nom 
+                    th prenom 
+                    th sexe 
+                    th date de naissance 
+                    th telephone 
+                    th adresse 
+                    th age 
+                    th nom de jeune fille de la mère 
+                    th
+            tbody.table-info
+                each d in data 
+                    tr 
+                        td= d.nom 
+                        td= d.prenom 
+                        td= d.sexe
+                        td= d.datenaissance 
+                        td= d.telephone 
+                        td= d.adresse 
+                        td= d.age 
+                        td= d.nomjeunefillemere
+                        td 
+                            a.btn.btn-info(href="/api/patient/"+d.idpatient) Details 

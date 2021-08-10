@@ -1,0 +1,25 @@
+extends try 
+block content 
+    fieldset 
+        legend #{title}
+        a(href="/api/medecin/add") AJOUTER UN NOUVEAU MEDECIN
+        table.table 
+            thead.table-dark
+                tr 
+                    th nom 
+                    th prenom 
+                    th sexe 
+                    th adresse 
+                    th telephone 
+                    th email
+                    th specialisation 
+            tbody.table-info
+                each d in data 
+                    tr 
+                        td= d.nom 
+                        td= d.prenom 
+                        td= d.sexe
+                        td= d.adresse
+                        td= d.telephone 
+                        td= d.email 
+                        td= d.specialisation

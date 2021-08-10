@@ -1,0 +1,30 @@
+extends try
+
+block content_form  
+    fieldset.form-group.border.p-3 
+        legend.w-auto.px-2 #{titre}
+        table.table
+            thead.table-dark
+                tr
+                    th Nom
+                    th Prenom
+                    th Sexe
+                    th Date Naissance
+                    th Tel
+                    th Adresse
+                    th Age
+                    th Nom jeune fille mere
+                    th
+            tbody
+                each d in data 
+                    tr 
+                        td=d.nom 
+                        td=d.prenom 
+                        td=d.sexe 
+                        td=d.datenaissance
+                        td=d.tel 
+                        td=d.addresse 
+                        td=d.age 
+                        td=d.nomjeunefillemere
+                        td  
+        a.btn.btn-info(href="/api/patient/edit/"+data[0].idpatient) Edit

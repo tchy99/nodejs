@@ -1,0 +1,33 @@
+extends try
+
+block content
+    form(action="/api/consultation/add", method="post")
+        fieldset.form-group.border.p-3 
+            legend.w-auto.px-2 #{titre}
+            .row.border.rounded.my-1.p-2.mx-auto
+                .mb-3 
+                    .form-group
+                        select.form-select(aria-label='Default select example' name='no_dossier')
+                            
+                            option(selected='consultation')
+                            option(value='027') 127
+                            option(value='127') 227
+                            option(value='227') 327
+                            option(value='327') 427
+                            
+                            
+                .mb-3 
+                    .form-group
+                        label.form-label(for = "symptome") Symptomes
+                        input.form-control(type="text", name="symptome", id="symptome")
+                .col-sm-12.col-md-12.col-lg-6   
+                    .form-group
+                        label.form-label(for = "idmedecin") ID Medcin
+                        input.form-control(type="text",min=1, name="idmedecin", id="idmedecin")
+                .col-sm-12.col-md-12.col-lg-6 
+                    .form-group 
+                        label.form-label(for = "date") Date Consultation
+                        input.form-control(type="date",required, name="date", id="date")
+            input.my-3(type="submit", value="Valider")
+                
+             
